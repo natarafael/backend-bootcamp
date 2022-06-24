@@ -44,7 +44,7 @@ public class PassService {
         pass.setFish(foundFish);
 
         foundAntenna.getPasses().add(pass);
-        pass.setAntenna(foundAntenna);
+        pass.setAntennaPass(foundAntenna);
 
         return passRepository.save(pass);
     }
@@ -62,7 +62,7 @@ public class PassService {
         pass.setFish(foundFish);
 
         foundAntenna.getPasses().add(pass);
-        pass.setAntenna(foundAntenna);
+        pass.setAntennaPass(foundAntenna);
 
         return passRepository.save(pass);
     }

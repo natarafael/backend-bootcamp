@@ -45,7 +45,7 @@ public class StatusAntennaService {
 
         foundAntenna.getStatusAntennas().add(statusAntenna);
 
-        statusAntenna.setAntenna(foundAntenna);
+        statusAntenna.setStatusAntenna(foundAntenna);
 
         return statusAntennaRepository.save(statusAntenna);
     }

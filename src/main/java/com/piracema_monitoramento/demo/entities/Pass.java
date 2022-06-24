@@ -26,7 +26,7 @@ public class Pass {
 
     @ManyToOne
     @JoinColumn(name = "fk_antenna")
-    private Antenna antenna;
+    private Antenna antennaPass;
 
     @PrePersist
     public void create() {

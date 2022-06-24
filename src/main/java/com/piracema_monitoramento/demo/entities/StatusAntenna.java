@@ -31,7 +31,7 @@ public class StatusAntenna {
 
     @ManyToOne
     @JoinColumn(name = "fk_antenna")
-    private Antenna antenna;
+    private Antenna statusAntenna;
 
     @PrePersist
     public void create() {

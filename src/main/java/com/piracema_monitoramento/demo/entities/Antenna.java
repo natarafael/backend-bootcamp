@@ -33,11 +33,11 @@ public class Antenna {
 
     private LocalDateTime uninstallDate;
 
-    @OneToMany(mappedBy = "antenna", cascade={CascadeType.ALL})
+    @OneToMany(mappedBy = "antennaPass", cascade={CascadeType.ALL})
     private List<Pass> passes;
 
     //VERIFICAR MELHOR MAPEAMENTO E SE INFLUENCIA
-    @OneToMany(mappedBy = "antenna", cascade={CascadeType.ALL})
+    @OneToMany(mappedBy = "statusAntenna", cascade={CascadeType.ALL})
     private List<StatusAntenna> statusAntennas;
 
     @PrePersist

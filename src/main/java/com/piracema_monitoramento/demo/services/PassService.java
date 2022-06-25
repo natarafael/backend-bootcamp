@@ -46,6 +46,10 @@ public class PassService {
         foundAntenna.getPasses().add(pass);
         pass.setAntennaPass(foundAntenna);
 
+        pass.setAntennaIdentifier(foundAntenna.getId());
+
+        pass.setFishIdentifier(foundFish.getId());
+
         return passRepository.save(pass);
     }
 

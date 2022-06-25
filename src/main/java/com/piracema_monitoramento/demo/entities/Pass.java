@@ -28,6 +28,10 @@ public class Pass {
     @JoinColumn(name = "fk_antenna")
     private Antenna antennaPass;
 
+    private Long antennaIdentifier;
+
+    private Long fishIdentifier;
+
     @PrePersist
     public void create() {
         registryDate = LocalDateTime.now();

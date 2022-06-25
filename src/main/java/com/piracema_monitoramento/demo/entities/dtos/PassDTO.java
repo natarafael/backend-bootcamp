@@ -19,4 +19,8 @@ public class PassDTO {
     private FishNoPassesDTO fish;
 
     private AntennaNoPassesDTO antenna;
+
+    private Long antennaIdentifier;
+
+    private Long fishIdentifier;
 }

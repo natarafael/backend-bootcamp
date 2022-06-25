@@ -33,6 +33,8 @@ public class StatusAntenna {
     @JoinColumn(name = "fk_antenna")
     private Antenna statusAntenna;
 
+    private Long antennaIdentifier;
+
     @PrePersist
     public void create() {
         registryDate = LocalDateTime.now();

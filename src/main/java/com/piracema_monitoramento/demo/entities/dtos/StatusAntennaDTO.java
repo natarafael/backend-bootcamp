@@ -24,4 +24,6 @@ public class StatusAntennaDTO {
     private String observations;
 
     private AntennaNoStatusAntennaDTO antenna;
+
+    private Long antennaIdentifier;
 }

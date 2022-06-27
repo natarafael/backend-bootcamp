@@ -49,6 +49,14 @@ public class StatusAntennaService {
 
         statusAntenna.setAntennaIdentifier(foundAntenna.getId());
 
+        statusAntenna.setLatitude(foundAntenna.getLatitude());
+
+        statusAntenna.setLongitude(foundAntenna.getLongitude());
+
+        statusAntenna.setInstallationDate(foundAntenna.getInstallationDate());
+
+        statusAntenna.setUninstallDate(foundAntenna.getUninstallDate());
+
         return statusAntennaRepository.save(statusAntenna);
     }
 

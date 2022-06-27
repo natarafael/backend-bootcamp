@@ -26,4 +26,13 @@ public class StatusAntennaDTO {
     private AntennaNoStatusAntennaDTO antenna;
 
     private Long antennaIdentifier;
+
+    private String latitude;
+
+    private String longitude;
+
+    private LocalDateTime installationDate;
+
+    private LocalDateTime uninstallDate;
+
 }

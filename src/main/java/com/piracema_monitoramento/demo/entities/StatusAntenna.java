@@ -35,6 +35,14 @@ public class StatusAntenna {
 
     private Long antennaIdentifier;
 
+    private String latitude;
+
+    private String longitude;
+
+    private LocalDateTime installationDate;
+
+    private LocalDateTime uninstallDate;
+
     @PrePersist
     public void create() {
         registryDate = LocalDateTime.now();
